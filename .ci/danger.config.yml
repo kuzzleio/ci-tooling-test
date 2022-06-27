@@ -1,4 +1,5 @@
 checks:
   branch-merge-check:
-    master:
-      - /.*-dev/
+    branches:
+      master:
+        - /.*-dev/
