@@ -6,3 +6,5 @@ jobs:
     name: Danger JS
     uses: kuzzleio/ci-tooling/.github/workflows/danger.yaml@branch-check
     secrets: inherit
+    with:
+      CONFIG_FILE: './.ci/danger.config.yml'
