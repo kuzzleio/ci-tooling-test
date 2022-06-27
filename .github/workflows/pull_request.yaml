@@ -4,7 +4,7 @@ on: [pull_request]
 jobs:
   danger-js:
     name: Danger JS
-    uses: kuzzleio/ci-tooling/.github/workflows/danger.yaml@branch-check
+    uses: kuzzleio/ci-tooling/.github/workflows/danger.yaml@master
     secrets: inherit
     with:
       DANGER_CONFIG: './.ci/danger.config.yml'
