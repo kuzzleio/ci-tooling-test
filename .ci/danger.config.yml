@@ -3,3 +3,4 @@ checks:
     branches:
       master:
         - /test-.*/
+  changelog-tag-check:
