@@ -1,0 +1,8 @@
+name: "Danger JS"
+on: [pull_request]
+
+jobs:
+  danger-js:
+    name: Danger JS
+    uses: kuzzleio/ci-tooling/.github/workflows/danger.yaml@branch-check
+    secrets: inherit
