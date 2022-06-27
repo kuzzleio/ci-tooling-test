@@ -6,10 +6,7 @@ on:
 jobs:
   danger-js:
     name: Danger JS
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: kuzzleio/ci-tooling/.github/workflows/danger.yaml@master
-        with:
-          DANGER_CONFIG: './.ci/danger.config.yml'
-          secrets: inherit
+    uses: kuzzleio/ci-tooling/.github/workflows/danger.yaml@master
+    secrets: inherit
+    with:
+      DANGER_CONFIG: './.ci/danger.config.yml'
