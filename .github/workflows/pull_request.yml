@@ -1,0 +1,12 @@
+name: "Danger JS"
+on:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  danger-js:
+    name: Danger JS
+    uses: kuzzleio/ci-tooling/.github/workflows/danger.yaml@master
+    secrets: inherit
+    with:
+      DANGER_CONFIG: './.ci/danger.config.yml'
