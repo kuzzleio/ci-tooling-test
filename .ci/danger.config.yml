@@ -4,3 +4,4 @@ checks:
       master:
         - /.*-dev/
   changelog-tag-check:
+  pr-body-check:
